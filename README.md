@@ -25,26 +25,24 @@ I had to preprocess and transform the data so that unsupervised machine learning
 
 I then proceeded with the Principal Component Analysis (PCA) to reduce the 98 scaled columns I had, to only 3 principal components. 
 
-![Screenshot1]()
+![Screenshot1](https://github.com/DannyJohnson-Hi/Cryptocurrencies/blob/main/images/screenshot1.png)
 
 To determine how many clusters (k) I could divide the cryptos in, I created an elbow curve. 
 
 
-
-
-![screenshot2]()
+![screenshot2](https://github.com/DannyJohnson-Hi/Cryptocurrencies/blob/main/images/screenshot2EC.png)
 
 As it is displayed, the optimal result was 4 clusters. So, I proceeded with the KMeans analysis to fit the pca dataframe and predict the clustering. The product was this clustered_df with a 'Class' column that showed the predictions to which group it belonged to. 
 
-![Screenshot3]()
+![Screenshot3](https://github.com/DannyJohnson-Hi/Cryptocurrencies/blob/main/images/screenshot3.png)
 
 lastly, I built some visualizations to better interpret the results. 
 
-![screenshot4]()
+![screenshot4](https://github.com/DannyJohnson-Hi/Cryptocurrencies/blob/main/images/screenshot4.png)
 
 This first one was a 3D scatter plot which located each clustered crypto in relation to the 3 principal components created on the PCA. As it is seen, there are 3 major groups and one outlier. 
 
-![screenshot5]()
+![screenshot5](https://github.com/DannyJohnson-Hi/Cryptocurrencies/blob/main/images/screenshot5.png)
 
 When trying to graph the clustered cryptos by total supply and mined coins, we can observe two outliers. The first one with a lot of supply and a lot of mined coins (BitTorrent Crypto) and another one with a lot of supply but not too many coins mined (TurtleCoin). 
 
